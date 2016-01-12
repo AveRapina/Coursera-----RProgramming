@@ -2,8 +2,12 @@
 ## functions do
 
 ## Write a short comment describing this function
-#  Structure that contains matrix and its inverse
-# and an set an get aux functions for the matrix
+The first function, makeVector creates a special "matrix", 
+#which is really a list containing functions to
+# set the value of the matrix
+# get the value of the matrix  
+# set the value of the inverse
+# get the value of the inverse
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <-function(y){
