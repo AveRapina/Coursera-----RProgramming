@@ -7,11 +7,11 @@ getRank <- function(data, colNum, state, num){
         stateSubset <- data[data[,7]==state,] # get the subset of state
         # get the vallues of heart attack, heart failure, pneumonia of that state
         outcomeArr <- stateSubset[,colNum]
-        len <- dim(stateSubset[!is.na(outcomeArr),])[1]
+        len <- dim(stateSubset[!is.na(outcomeArr),])[1] # get dimmensions
         if(num == "worst"){
                 rank <-getRankHelper(stateSubset, outcomeArr, len) # get last =len
         }else if(num >len ){
-                rank <-NA
+                rank <-NA # according to guide, return NA if bigger than len
         }else{
                 rank <-getRankHelper(stateSubset, outcomeArr, num) # get the rak number
         }

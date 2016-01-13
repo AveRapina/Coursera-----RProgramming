@@ -9,15 +9,21 @@
 # set the value of the inverse
 # get the value of the inverse
 makeCacheMatrix <- function(x = matrix()) {
-        inv <- NULL
-        set <-function(y){
-                x<<-y
-                inv <- NULL
+        
+        if(det(x==0)){
+                message("Non invertible matrix")
         }
-        get<-function()x
-        setInv <- function(inv) inv <<-inverse
-        getInv <- function() inv
-        list(set = set, get =get, setInv=setInv, getInv=getInv)
+        else{
+                inv <- NULL
+                set <-function(y){
+                        x<<-y
+                        inv <- NULL
+                }
+                get<-function()x
+                setInv <- function(inv) inv <<-inverse
+                getInv <- function() inv
+                list(set = set, get =get, setInv=setInv, getInv=getInv)
+        }
 }
 
 

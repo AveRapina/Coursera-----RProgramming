@@ -6,11 +6,11 @@ setwd(path)
 
 # get the hospital name
 getHospName <- function(data, colNum, state){
-        stateSubset <- data[data[,7]==state,] # het the heart attack from the named states
-        outcomeArr <- stateSubset[,colNum] # subset data from that collum
-        min <- min(outcomeArr, na.rm=T) # get minumum and remove NA
-        minIdx <- which(outcomeArr == min) # get the index of min
-        hospName <- stateSubset[minIdx, 2] # get the hospital name
+        stateSubset <- data[data[,7]==state, ] # het the heart attack from the named states
+        outcomeArr <- stateSubset[, colNum] # subset data from that collum
+        min <- min(outcomeArr, na.rm=TRUE) # get minumum and remove NA
+        minIdx <- which(outcomeArr == min) # get the index of min on array
+        hospName <- stateSubset[minIdx, 2] # get the hospital name from idx
         return(hospName)
 }
 
