@@ -2,7 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
-The first function, makeVector creates a special "matrix", 
+#The first function, makeVector creates a special "matrix", 
 #which is really a list containing functions to
 # set the value of the matrix
 # get the value of the matrix  
