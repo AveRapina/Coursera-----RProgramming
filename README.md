@@ -1,4 +1,4 @@
-#Coursera----R_programming
+#Coursera----RProgramming
 
 
 #### All files on folder:
@@ -7,4 +7,4 @@
 #####- Peer
 #####- Material
 
-####@HSO 2015
+#####@HSO 2015
